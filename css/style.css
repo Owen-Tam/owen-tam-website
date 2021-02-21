@@ -149,8 +149,7 @@ header nav .btn-nav {
     text-align: left;
     font-size: 2rem;
     font-weight: normal;
-    margin-bottom:  4rem;
-
+    margin-bottom:  60px;
 }
 #about .grid-container .text-grid .about-title{
     position: relative;
@@ -179,12 +178,30 @@ header nav .btn-nav {
     color: white;
 }
 #about .about-contact .co{
-    margin: 0 0.9rem;  
+    margin: 0 0.9rem 0 0;  
     
 }
 #about .buttons {
     margin-top: 20px;
 }
+#about .text-grid {
+    
+}
+#about .img-grid {
+    align-self: center;
+}
+#about .about-contact {
+
+}
+
+#about .about-email {
+    padding-top: 1.5rem;
+}
+#about .about-email p{
+    word-spacing: 2px;
+    font-size: 16px;
+    line-height: 30px;
+}
 
 
 
@@ -201,12 +218,9 @@ header nav .btn-nav {
 
 
 
-
-
-@media all and (max-width: 1100px) {
+@media all and (max-width: 1385px) {
     #about img {
         max-width: 100%;
-        min-width: 100%;
         height: auto;
     }
     #about .grid-container .text-grid h1{
@@ -229,7 +243,7 @@ header nav .btn-nav {
 @media all and (max-width: 700px) {
     #about .grid-container {
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto 1fr;
         grid-template-columns: auto;
     }
     #about .text-grid {
@@ -238,6 +252,14 @@ header nav .btn-nav {
     #about .img-grid {
         height: auto;
     }
+    #about .text-grid{
+        padding-top: 3rem;
+    }
+
+    #about .about-contact .about-resume{
+        margin: 1.5rem 0 1rem 0;
+    }
+    
 }
 
 

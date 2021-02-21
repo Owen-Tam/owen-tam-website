@@ -21,7 +21,7 @@ $(window).scroll(function() {
         opacity: function() {
             var elementHeight = $(this).height(),
             opacity = ((elementHeight - scrollTop) / elementHeight);
-            return opacity+2.7;
+            return opacity+2.3;
         }
     });
 });
