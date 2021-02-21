@@ -184,14 +184,8 @@ header nav .btn-nav {
 #about .buttons {
     margin-top: 20px;
 }
-#about .text-grid {
-    
-}
 #about .img-grid {
     align-self: center;
-}
-#about .about-contact {
-
 }
 
 #about .about-email {
@@ -201,6 +195,13 @@ header nav .btn-nav {
     word-spacing: 2px;
     font-size: 16px;
     line-height: 30px;
+}
+
+#about .about-contact a:hover i{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 
@@ -318,3 +319,58 @@ header nav .btn-nav {
     
     
 }
+#services {
+    margin: 14rem auto 7rem auto;
+    width: 70%;
+    height: 100%;
+}
+
+#services .services-title p {
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+#services .services-title {
+    text-align: center;
+    line-height: 40px;
+}
+
+#services .services-title h3 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 4rem;
+}
+#services .services-services .card i {
+    font-size: 5rem;
+}
+#services .services-services {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+#services .services-services .card {
+    transition: 0.3s ease;
+    justify-self: center;
+    text-align: center;
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    color: black;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 40px 30px;
+    margin: 0 2rem 3rem 10px;
+}
+#services .services-services .card h3 {
+    margin: 10px 10px 5px 10px;
+    font-size: 20px;
+}
+#services .services-services .card:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
+}
+
