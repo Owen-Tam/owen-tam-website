@@ -96,6 +96,7 @@ header nav .btn-nav {
     width: auto;
 }
 #banner .container .banner-title{
+    padding: auto 30px;
     text-align: center;
     position: relative;
     top: 45%;
@@ -355,9 +356,9 @@ header nav .btn-nav {
     justify-self: center;
     text-align: center;
     width: 300px;
-    background-color: rgba(255, 255, 255, 0.95);
+    background-color: rgb(34, 34, 34);
     box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
-    color: black;
+    color: white;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
