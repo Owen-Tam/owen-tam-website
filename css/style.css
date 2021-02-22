@@ -452,32 +452,6 @@ header nav .btn-nav {
     }
 }
 
-.progress-bar {
-    width: 500px;
-    height: 3em;
-    background: #111;
-    border-radius: 1.5em;
-    position: relative;
-    top: 43%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.progress-bar::before {
-    content: " ";
-    display: flex;
-    align-items: center;
-    position: absolute;
-    left: .5em;
-    top: .5em;
-    bottom: .5em;
-    width: calc(var(--width, 0) * 1%);
-    min-width: 2rem;
-    max-width: calc(100% - 1em);
-    background-color: #00f9ff;
-    border-radius: 1em;
-    padding: 1em;
-}
 
 
 
