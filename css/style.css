@@ -406,3 +406,10 @@ header nav .btn-nav {
 #services .services-services .card h3 {
     margin-top: 20px;
 }
+
+@media all and (max-width: 700px) {
+    #services .services-title h3 {
+        font-size: 3.2rem;
+        line-height: 1.5;
+    }
+}
