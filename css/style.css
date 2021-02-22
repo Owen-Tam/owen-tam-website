@@ -106,18 +106,43 @@ header nav .btn-nav {
     line-height: 1.0;
     opacity: 1.0;
 } 
+#banner .banner-word {
+    color: white;
+    transition: color 0.3s;
+}
+@keyframes word {
+    0% {transform: scale(1, 1);}
+    50% {transform: scale(1, .5);}
+    75% {transform: scale(1, 1.5);}
+    100% {transform: scale(1, 1);}
+}
+#banner .banner-word:hover  {
+    display: inline-block;
+    transform: scale(1, 1);
+    cursor: pointer;
+    animation-name: word;
+    animation-duration: 0.3s;
+    animation-direction: forwards; 
+    color: #00f9ff;
+}
+
+
+
+
 #banner .container .banner-title h3{
     font-size: 20px;
     font-weight: 400;
     color: rgba(255, 255, 255, 0.6);
 
 }
+
 #banner .container .banner-title h1 {
     font-size: 90px;
     line-height: 1.2;
     font-weight: 900;
     letter-spacing: 5px;
     margin: 0.6rem 0 0.4rem 0;
+    
 }
 
 #about img {
@@ -151,7 +176,9 @@ header nav .btn-nav {
     font-size: 2rem;
     font-weight: normal;
     margin-bottom:  60px;
+    
 }
+
 #about .grid-container .text-grid .about-title{
     position: relative;
     text-align: right;
@@ -168,15 +195,13 @@ header nav .btn-nav {
 #about .grid-container .text-grid .about-contact .about-resume a{
     font-size: 1.2rem;
     text-decoration: none;
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #00f9ff;
     
 }
 #about .about-contact i{
     font-size: 1.5rem;
     color: white;
+    transition: color 0.3s;
 }
 #about .about-contact .co{
     margin: 0 0.9rem 0 0;  
@@ -195,14 +220,11 @@ header nav .btn-nav {
 #about .about-email p{
     word-spacing: 2px;
     font-size: 16px;
-    line-height: 30px;
+    line-height: 2.5;
 }
 
 #about .about-contact a:hover i{
-    background: var(--gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: #00f9ff;
 }
 
 
@@ -304,17 +326,11 @@ header nav .btn-nav {
         display: none;
     }
     header nav .menu .item.active a{
-        background: var(--gradient-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #00f9ff;
     }
     .item:not(.button) a:hover,
     .item a:hover::after {
-        background: var(--gradient-color);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: #00f9ff;
     }
     
     
@@ -340,7 +356,19 @@ header nav .btn-nav {
 #services .services-title h3 {
     font-size: 4rem;
     text-align: center;
-    line-height: 4rem;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    
+}
+#services .services-title h3 .banner-word:hover{
+    display: inline-block;
+    transform: scale(1, 1);
+    cursor: pointer;
+    animation-name: word;
+    animation-duration: 0.3s;
+    animation-direction: forwards; 
+    color: #00f9ff;
 }
 #services .services-services .card i {
     font-size: 5rem;
@@ -364,7 +392,7 @@ header nav .btn-nav {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     padding: 40px 30px;
-    margin: 0 2rem 3rem 10px;
+    margin: 0 2rem 3rem 2rem;
 }
 #services .services-services .card h3 {
     margin: 10px 10px 5px 10px;
@@ -375,3 +403,6 @@ header nav .btn-nav {
     box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
 }
 
+#services .services-services .card h3 {
+    margin-top: 20px;
+}
