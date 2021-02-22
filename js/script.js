@@ -14,17 +14,17 @@ function toggleMenu() {
 
 toggle.addEventListener('click', toggleMenu, false);
 
-$(window).scroll(function() {
-    var scrollTop = $(this).scrollTop();
+// $(window).scroll(function() {
+//     var scrollTop = $(this).scrollTop();
 
-        $('.fade').css({
-        opacity: function() {
-            var elementHeight = $(this).height(),
-            opacity = ((elementHeight - scrollTop) / elementHeight);
-            return opacity+2.3;
-        }
-    });
-});
+//         $('.fade').css({
+//         opacity: function() {
+//             var elementHeight = $(this).height(),
+//             opacity = ((elementHeight - scrollTop) / elementHeight);
+//             return opacity+2.3;
+//         }
+//     });
+// });
 window.addEventListener("load", function() {
     const loader = document.querySelector(".loader");
     loader.className += " hidden";
