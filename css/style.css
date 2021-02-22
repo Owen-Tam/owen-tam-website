@@ -116,7 +116,7 @@ header nav .btn-nav {
     75% {transform: scale(1, 1.5);}
     100% {transform: scale(1, 1);}
 }
-#banner .banner-word:hover {
+#banner .banner-word:hover{
     display: inline-block;
     transform: scale(1, 1);
     cursor: pointer;
@@ -425,7 +425,19 @@ header nav .btn-nav {
 
 .loader.hidden {
     animation: fadeOut 1s;
+    animation-delay: 2s;
     animation-fill-mode: forwards;
+}
+.loader .loader-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 0.6rem 0 0.4rem 0;
 }
 @keyframes fadeOut{
     100% {
@@ -433,6 +445,7 @@ header nav .btn-nav {
         visibility: hidden;
     }
 }
+
 
 
 
