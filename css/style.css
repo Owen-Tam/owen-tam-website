@@ -112,7 +112,7 @@ header nav .btn-nav {
 }
 @keyframes word {
     0% {transform: scale(1, 1);}
-    45% {transform: scale(1, .5);}
+    45% {transform: scale(1.3, .5);}
     75% {transform: scale(1, 1.5);}
     100% {transform: scale(1, 1);}
 }
@@ -312,6 +312,7 @@ header nav .btn-nav {
 }
 
 @media all and (min-width: 960px) {
+    
     header nav .item{
         order: 1;
         position: relative;
@@ -332,6 +333,7 @@ header nav .btn-nav {
     .item a:hover::after {
         color: #00f9ff;
     }
+
     
     
     
@@ -425,7 +427,6 @@ header nav .btn-nav {
 
 .loader.hidden {
     animation: fadeOut 1s;
-    animation-delay: 2s;
     animation-fill-mode: forwards;
 }
 .loader .loader-content {
@@ -445,7 +446,45 @@ header nav .btn-nav {
         visibility: hidden;
     }
 }
+#projects .projects-title {
+    text-align: center;
+}
+#projects .projects-title h3{
 
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#projects {
+    margin: 14rem auto 7rem auto;
+    width: 70%;
+}
+#projects .projects-title h3 .banner-word:hover {
+    display: inline-block;
+    transform: scale(1, 1);
+    cursor: pointer;
+    animation-name: word;
+    animation-duration: 0.3s;
+    animation-direction: forwards; 
+    color: #00f9ff;
+}
+
+#projects .projects-title p{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+#project .container .grid-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "ro ro"
+    "col1 col2"
+    "col1 col2";
+}
 
 
 
