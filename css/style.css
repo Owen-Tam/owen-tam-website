@@ -427,6 +427,7 @@ header nav .btn-nav {
 
 .loader.hidden {
     animation: fadeOut 1s;
+    animation-delay: 0.5s;
     animation-fill-mode: forwards;
 }
 .loader .loader-content {
@@ -468,7 +469,7 @@ header nav .btn-nav {
     animation-name: word;
     animation-duration: 0.3s;
     animation-direction: forwards; 
-    color: #00f9ff;
+    color: #66fcf1;
 }
 
 #projects .projects-title p{
@@ -485,7 +486,77 @@ header nav .btn-nav {
     "col1 col2"
     "col1 col2";
 }
+#project #rect841 {
+    fill: url(#image)
+}
 
+.loader .ring {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    height: 150px;
+    background: transparent;
+    border: 3px solid #3c3c3c;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+}
+.loader .ring::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    width: 100%;
+    height: 100%;
+    border: 3px solid transparent;
+    border-top: 3px solid #66fcf1;
+    border-right: 3px solid #66fcf1;
+    border-radius: 50%;
+    animation: animateCircle 2s linear infinite;
+}
+
+.loader .ring span {
+    display: block;
+    position: absolute;
+    top: calc(50% - 2px);
+    left: 50%;
+    width: 50%;
+    height: 4px;
+    background: transparent;
+    transform-origin: left;
+    animation: animate 2s linear infinite;
+}
+
+.loader .ring span::before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    border-radius: 50%;
+    background: #66fcf1;
+    top: -8px;
+    right: -8px;
+    box-shadow: 0 0 20px #66fcf1;
+}
+
+@keyframes animateCircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+@keyframes animate {
+    0% {
+        transform: rotate(45deg);
+    }
+    100% {
+        transform: rotate(405deg);
+    }
+}
 
 
 
