@@ -458,8 +458,9 @@ header nav .btn-nav {
     background: #111;
     border-radius: 1.5em;
     position: relative;
-    top: 42%;
-    left: 37%;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .progress-bar::before {
