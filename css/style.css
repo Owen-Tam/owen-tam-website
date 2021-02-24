@@ -323,9 +323,6 @@ header nav .btn-nav {
     header nav .toggle {
         display: none;
     }
-    header nav .logo {
-        display: none;
-    }
     header nav .menu .item.active a{
         color: #00f9ff;
     }
@@ -424,72 +421,6 @@ header nav .btn-nav {
     background: rgb(34, 34, 34);
     z-index: 1000;
 }
-
-.loader.hidden {
-    animation: fadeOut 1s;
-    animation-delay: 0.5s;
-    animation-fill-mode: forwards;
-}
-.loader .loader-content {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 5px;
-    margin: 0.6rem 0 0.4rem 0;
-}
-@keyframes fadeOut{
-    100% {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-#projects .projects-title {
-    text-align: center;
-}
-#projects .projects-title h3{
-
-    font-size: 4rem;
-    text-align: center;
-    line-height: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-#projects {
-    margin: 14rem auto 7rem auto;
-    width: 70%;
-}
-#projects .projects-title h3 .banner-word:hover {
-    display: inline-block;
-    transform: scale(1, 1);
-    cursor: pointer;
-    animation-name: word;
-    animation-duration: 0.3s;
-    animation-direction: forwards; 
-    color: #66fcf1;
-}
-
-#projects .projects-title p{
-    opacity: 0.4;
-    text-transform: uppercase;
-    font-size: 1.2rem;
-}
-#project .container .grid-cont{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 2fr;
-    grid-template-areas: 
-    "ro ro"
-    "col1 col2"
-    "col1 col2";
-}
-#project #rect841 {
-    fill: url(#image)
-}
-
 .loader .ring {
     position: absolute;
     top: 50%;
@@ -557,6 +488,470 @@ header nav .btn-nav {
         transform: rotate(405deg);
     }
 }
+
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+.loader .loader-content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 900;
+    letter-spacing: 5px;
+    margin: 0.6rem 0 0.4rem 0;
+}
+@keyframes fadeOut{
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+#projects .projects-title {
+    text-align: center;
+}
+#projects .projects-title h3{
+
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#projects {
+    margin: 14rem auto 7rem auto;
+    width: 70%;
+}
+#projects .projects-title h3 .banner-word:hover {
+    display: inline-block;
+    transform: scale(1, 1);
+    cursor: pointer;
+    animation-name: word;
+    animation-duration: 0.3s;
+    animation-direction: forwards; 
+    color: #66fcf1;
+}
+
+#projects .projects-title p{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+#projects .projects-project {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+/* Peak Client */
+#projects .projects-project .projects-card-peakclient h5{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+#projects .projects-project .projects-card-peakclient {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    position: relative;
+    width: 17rem;
+    height: 9rem;
+    border-radius: 8px;
+    transition: all 0.5s;
+    overflow: hidden;
+    
+    
+}
+#projects .projects-project .projects-card-peakclient:hover {
+    background-color: rgb(224, 77, 63);
+}
+#projects .projects-project .projects-card-peakclient:hover h5 {
+    transform: translate(-68px, -60px);
+}
+#projects .projects-project .projects-card-peakclient .p-peakclient{
+    background: rgb(190, 64, 53);
+    transform: translateY(10rem);
+    height: 2.3rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#projects .projects-project .projects-card-peakclient:hover .p-peakclient{
+    transform: translateY(290%);
+    opacity: 1;
+    position: relative;
+    
+}
+#projects .projects-project .projects-card-peakclient .p-peakclient p {
+    font-style: italic;
+}
+/*OT*/
+#projects .projects-project .projects-card-ot h5{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+#projects .projects-project .projects-card-ot {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    position: relative;
+    width: 17rem;
+    height: 9rem;
+    border-radius: 8px;
+    transition: all 0.5s;
+    overflow: hidden;
+    
+    
+}
+#projects .projects-project .projects-card-ot:hover {
+    background-color: rgb(79, 192, 236);
+}
+#projects .projects-project .projects-card-ot:hover h5 {
+    transform: translate(-68px, -60px);
+}
+#projects .projects-project .projects-card-ot .p-ot{
+    background: rgb(63, 152, 187);
+    transform: translateY(10rem);
+    height: 2.3rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#projects .projects-project .projects-card-ot:hover .p-ot{
+    transform: translateY(290%);
+    opacity: 1;
+    position: relative;
+    
+}
+#projects .projects-project .projects-card-ot .p-ot p {
+    font-style: italic;
+}
+/*Ecom Demo*/
+#projects .projects-project .projects-card-ecom h5{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+#projects .projects-project .projects-card-ecom {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    position: relative;
+    width: 17rem;
+    height: 9rem;
+    border-radius: 8px;
+    transition: all 0.5s;
+    overflow: hidden;
+}
+#projects a{
+    text-decoration: none;
+}
+#projects .projects-project .projects-card-ecom:hover {
+    background-color: rgb(137, 47, 240);
+}
+#projects .projects-project .projects-card-ecom:hover h5 {
+    transform: translate(-68px, -60px);
+}
+#projects .projects-project .projects-card-ecom .p-ecom{
+    background: rgb(89, 30, 156);
+    transform: translateY(10rem);
+    height: 2.3rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#projects .projects-project .projects-card-ecom:hover .p-ecom{
+    transform: translateY(290%);
+    opacity: 1;
+    position: relative;
+    
+}
+#projects .projects-project .projects-card-ecom .p-ecom p {
+    font-style: italic;
+}
+#projects .projects-project .projects-card {
+    cursor: pointer;
+}
+
+#projects .projects-project .projects-card-ecom .p-ecom p a{
+    color: white;
+}
+/* App demo */
+#projects .projects-project .projects-card-app h5{
+    font-size: 1.7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+#projects .projects-project .projects-card-app {
+    background-color: rgb(48, 48, 48);
+    text-align: center;
+    position: relative;
+    width: 17rem;
+    height: 9rem;
+    border-radius: 8px;
+    transition: all 0.5s;
+    overflow: hidden;
+    
+    
+}
+#projects .projects-project .projects-card-app:hover {
+    background-color: rgb(16, 16, 221);
+}
+#projects .projects-project .projects-card-app:hover h5 {
+    transform: translate(-68px, -60px);
+}
+#projects .projects-project .projects-card-app .p-app{
+    background: rgb(11, 11, 145);
+    transform: translateY(10rem);
+    height: 2.3rem;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    transition: transform 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#projects .projects-project .projects-card-app:hover .p-app{
+    transform: translateY(290%);
+    opacity: 1;
+    position: relative;
+    
+}
+#projects .projects-project .projects-card-app .p-app p {
+    font-style: italic;
+}
+#projects .projects-project .projects-card {
+    cursor: pointer;
+    color: white;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#projects .projects-project .projects-card-app .p-app p a{
+    color: white;
+    text-decoration: underline;
+}
+
+#contact {
+    margin: 14rem auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-title {
+    text-align: center;
+}
+#contact .contact-title h3{
+
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+#contact .contact-title h3 .banner-word:hover {
+    display: inline-block;
+    transform: scale(1, 1);
+    cursor: pointer;
+    animation-name: word;
+    animation-duration: 0.3s;
+    animation-direction: forwards; 
+    color: #66fcf1;
+}
+
+#contact .contact-title p{
+    opacity: 0.4;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+#contact .contact-contact{
+    width: 100%;
+    background: rgb(48, 48, 48);
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+#contact .contact-contact .contactForm {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+#contact .contact-contact h2{
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+#contact .contact-contact .contact-info {
+    display: flex;
+    flex-direction: column;
+}
+#contact .contact-contact .contact-info .boxx {
+    display: flex;
+    position: relative;
+    margin-bottom: 1.5rem;
+}
+#contact .contact-contact .contact-info .boxx .icon {
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    color: #000;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.3rem;
+}
+#contact .contact-contact .contact-info .boxx .text {
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+#contact .contact-contact .contact-info .boxx .text h4{
+    font-weight: 500;
+    color: #66fcf1;
+}
+#contact .contactForm h2{
+    font-weight: 500;
+    font-size: 2rem;
+}
+#contact .contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+#contact .contactForm .inputBox input,
+#contact .contactForm .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid rgb(235, 235, 235);
+    outline: none;
+    background: transparent;
+    color: rgb(235, 235, 235);
+    resize: none;
+}
+#contact .contactForm .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 1rem;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+#contact .contactForm .inputBox .sub {
+    background-color: rgb(34, 34, 34);
+}
+#contact .contactForm .inputBox input:focus ~ span,
+#contact .contactForm .inputBox input:valid ~ span,
+#contact .contactForm .inputBox textarea:focus ~ span,
+#contact .contactForm .inputBox textarea:valid ~ span{
+    color: #66fcf1;
+    font-size: 0.8rem;
+    transform: translateY(-20px);
+}
+#contact .contactForm .inputBox input[type="submit"] {
+    width: 100px;
+    background: #4cc0b8;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 1.1rem;
+}
+@media (max-width: 895px) {
+    .contact-contact {
+        flex-direction: column;
+    }
+    #contact  .contact-contact .contactForm {
+        margin-bottom: 43px;
+        width: 90%;
+    }
+    #contact  .contact-contact .contact-info {
+        width: 90%;
+        justify-content: center;
+    }
+
+}
+@media (max-width: 531px) {
+    #contact .contact-contact .contact-info .boxx {
+        display: flex;
+        position: relative;
+    }
+    #contact .contact-contact .contact-info .boxx .icon {
+        display: none;
+    }
+    #contact .contact-contact .contact-info .boxx .text {
+        display: flex;
+        font-size: 16px;
+        color: #fff;
+        flex-direction: column;
+        font-weight: 300;
+        
+        margin: 0;
+    }
+    #contact .contact-contact .contact-info .boxx .text h4{
+        font-weight: 500;
+        color: #66fcf1;
+    }
+    #contact .contact-contact .contact-info .boxx .text p{
+        font-size: 0.5rem;
+    }
+    #contact .contact-contact .contact-info {
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+
 
 
 
