@@ -766,7 +766,7 @@ header nav .btn-nav {
 
 #contact {
     margin: 14rem auto;
-    width: 70%;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -936,14 +936,64 @@ header nav .btn-nav {
         color: #66fcf1;
     }
     #contact .contact-contact .contact-info .boxx .text p{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
     #contact .contact-contact .contact-info {
         width: 100%;
         align-items: center;
         justify-items: center;
         text-align: center;
+        padding: 25px;
     }
+}
+@media (max-width: 464px) {
+    #services .services-title h3{
+        font-size: 2.6rem;
+
+    }
+    #projects .projects-title h3 {
+        font-size: 2.7rem;
+    }
+    #projects .projects-project .projects-card {
+        margin-right: 0;
+    }
+    #contact .contact-title h3 {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    #contact .contactForm h2 {
+        font-size: 1.5rem;
+    }
+    #contact .contact-contact{
+        width: 100%;
+        padding: 1.2rem;
+    }
+    #contact {
+        width: 80%;
+    }
+    #banner .container .banner-title h1{
+        font-size: 70px;
+    }
+    
+    
+}
+footer {
+    width: 100%;
+    text-align: center;
+}
+footer .icons i{
+    font-size: 3rem;
+    margin: 0 15px 0 15px;
+    transition: all 0.3s;
+
+}
+footer .icons {
+    margin-bottom: 50px;
+    
+}
+footer .icons i:hover {
+    transform: translateY(-10px);
+    color: #66fcf1;
 }
 
 
