@@ -192,6 +192,10 @@ header nav .btn-nav {
 #about .grid-container .text-grid .about-contact {
     margin-top: 1rem;
 }
+#about .grid-container .text-grid .about-contact .about-resume {
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
 #about .grid-container .text-grid .about-contact .about-resume a{
     font-size: 1.2rem;
     text-decoration: none;
@@ -405,7 +409,6 @@ header nav .btn-nav {
 #services .services-services .card h3 {
     margin-top: 20px;
 }
-
 @media all and (max-width: 700px) {
     #services .services-title h3 {
         font-size: 3.2rem;
@@ -954,8 +957,16 @@ header nav .btn-nav {
     #projects .projects-title h3 {
         font-size: 2.7rem;
     }
+    #projects  {
+        width: 90%;
+    }
     #projects .projects-project .projects-card {
         margin-right: 0;
+        width: 8rem;
+        height: 5.8rem;
+    }
+    #projects .projects-project .projects-card h5{
+        font-size: 1.4rem;
     }
     #contact .contact-title h3 {
         font-size: 2rem;
@@ -976,6 +987,23 @@ header nav .btn-nav {
     }
     
     
+    
+}
+@media (max-width: 845px) {
+    #projects  {
+        width: 90%;
+    }
+    #projects .projects-project .projects-card {
+        margin-right: 0;
+        width: 10rem;
+        height: 5.8rem;
+    }
+    #projects .projects-project .projects-card h5{
+        font-size: 1.4rem;
+    }
+    #contact {
+        width: 80%;
+    }
 }
 footer {
     width: 100%;
@@ -994,6 +1022,9 @@ footer .icons {
 footer .icons i:hover {
     transform: translateY(-10px);
     color: #66fcf1;
+}
+footer a{
+    color: white;
 }
 
 
