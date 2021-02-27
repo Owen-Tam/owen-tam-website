@@ -150,6 +150,7 @@ header nav .btn-nav {
     justify-content: start;
 }
 
+
 #about {
     margin: 7rem auto;
     width: 70%;
@@ -185,16 +186,13 @@ header nav .btn-nav {
 }
 
 #about .grid-container .text-grid .about-text {
-    line-height: 2;
+    line-height: 1.8;
     color: #8c8c8c;
     font-size: 18px;
 }
-#about .grid-container .text-grid .about-contact {
-    margin-top: 1rem;
-}
 #about .grid-container .text-grid .about-contact .about-resume {
-    margin-top: 60px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 #about .grid-container .text-grid .about-contact .about-resume a{
     font-size: 1.2rem;
@@ -218,13 +216,11 @@ header nav .btn-nav {
     align-self: center;
 }
 
-#about .about-email {
-    padding-top: 1.5rem;
-}
 #about .about-email p{
+    margin-top: 14px;
     word-spacing: 2px;
     font-size: 16px;
-    line-height: 2.5;
+    line-height: 1.5;
 }
 
 #about .about-contact a:hover i{
@@ -247,10 +243,7 @@ header nav .btn-nav {
 
 
 @media all and (max-width: 1385px) {
-    #about img {
-        max-width: 100%;
-        height: auto;
-    }
+    
     #about .grid-container .text-grid h1{
         font-size: 180px;
         position: absolute;
@@ -268,19 +261,17 @@ header nav .btn-nav {
 
 }
 
-@media all and (max-width: 700px) {
+@media (max-width: 800px) {
     #about .grid-container {
         display: grid;
         grid-template-rows: auto 1fr;
         grid-template-columns: auto;
     }
-    #about .text-grid {
-        margin: 0;
-    }
     #about .img-grid {
         height: auto;
     }
     #about .text-grid{
+        margin-left: 0;
         padding-top: 3rem;
     }
 
@@ -304,10 +295,6 @@ header nav .btn-nav {
         flex: 1;
         text-align: right;
         order: 2;
-    }
-    #about .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
     }
 
     
@@ -768,7 +755,7 @@ header nav .btn-nav {
 }
 
 #contact {
-    margin: 14rem auto;
+    margin: 14rem auto 4rem auto;
     width: 50%;
     display: flex;
     flex-direction: column;
