@@ -178,10 +178,13 @@ header nav .btn-nav {
         display: none;
     }
     #banner .banner-title  {
-        margin: 0 1.2rem;
+        margin: 0 1.2rem 0 0;
     }
     #banner .banner-title h1{
         font-size: 3.5rem;
+    }
+    #banner .banner-title h1::after {
+        width: 180px;
     }
 }
 
@@ -317,6 +320,9 @@ header nav .btn-nav {
 
     #about .about-contact .about-resume{
         margin: 1.5rem 0 1rem 0;
+    }
+    #about .container .grid-container .img-grid img{
+        max-width: 90%;
     }
     
 }
