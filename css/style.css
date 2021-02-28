@@ -101,7 +101,7 @@ header nav .btn-nav {
     flex-wrap: wrap;
 }
 #banner .banner-il img{
-    max-width: 100%;
+    max-width: 90%;
 }
 
 #banner .banner-word {
@@ -173,12 +173,15 @@ header nav .btn-nav {
 .button.primary-btn:focus {
     border: none;
 }
-@media (max-width: 1295px) {
+@media (max-width: 1296px) {
     #banner .banner-il img{
         display: none;
     }
     #banner .banner-title  {
-        margin-right: 10;
+        margin: 0 1.2rem;
+    }
+    #banner .banner-title h1{
+        font-size: 3.5rem;
     }
 }
 
@@ -1005,9 +1008,6 @@ header nav .btn-nav {
     }
     #contact {
         width: 80%;
-    }
-    #banner .container .banner-title h1{
-        font-size: 70px;
     }
     
     
