@@ -4,7 +4,9 @@
     padding: 0;
     margin: 0;
 }
+
 :root {
+    --main: #16eb96;
     --text-color: #777777;
     --gradient-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
@@ -90,25 +92,46 @@ header nav .opened .item {
 header nav .btn-nav {
     border-bottom: 1px #444 solid;
 }
-
-#banner .container{
-    height: 50rem;
-    width: auto;
+#banner {
+    margin: 100px auto 15rem 20px;
 }
-#banner .container .banner-title{
-    padding: auto 30px;
-    text-align: center;
-    position: relative;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    line-height: 1.0;
-    opacity: 1.0;
-} 
+#banner .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#banner .banner-il img{
+    max-width: 100%;
+}
+
 #banner .banner-word {
     color: white;
     transition: color 0.3s;
+}
+#banner .banner-title {
+    margin-right: 250px;
+    position: relative;
+    margin: auto 80px;
+    
+    
+}
+#banner .banner-title h1 {
+    font-size: 3.8rem;
+    word-spacing: 5px;
+    line-height: 1.3;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+#banner .banner-title h1::after {
+    content: '';
+    height: 10px;
+    width: 193px;
+    position: absolute;
+    background-color: var(--main);
+    left: 75px;
+    bottom: -8px;
+    z-index: -1;
 }
 @keyframes word {
     0% {transform: scale(1, 1);}
@@ -123,26 +146,40 @@ header nav .btn-nav {
     animation-name: word;
     animation-duration: 0.3s;
     animation-direction: forwards; 
-    color: #00f9ff;
-}
-
-
-
-
-#banner .container .banner-title h3{
-    font-size: 20px;
-    font-weight: 400;
-    color: rgba(255, 255, 255, 0.6);
-
-}
-
-#banner .container .banner-title h1 {
-    font-size: 90px;
-    line-height: 1.2;
-    font-weight: 900;
-    letter-spacing: 5px;
-    margin: 0.6rem 0 0.4rem 0;
+    color: var(--main);
     
+}
+#banner p{
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+#banner .button {
+    cursor: pointer;
+    margin-top: 20px;
+    width: 10rem;
+    font-size: 1.3rem;
+    height: 3rem;
+}
+.button.primary-btn{
+    background: var(--main);
+    border: 1px solid var(--main);
+    transition: all 0.3s; 
+}
+.button.primary-btn:hover {
+    background: #3c3c3c;
+    color: white;
+
+}
+.button.primary-btn:focus {
+    border: none;
+}
+@media (max-width: 1295px) {
+    #banner .banner-il img{
+        display: none;
+    }
+    #banner .banner-title  {
+        margin-right: 10;
+    }
 }
 
 #about img {
@@ -197,7 +234,7 @@ header nav .btn-nav {
 #about .grid-container .text-grid .about-contact .about-resume a{
     font-size: 1.2rem;
     text-decoration: none;
-    color: #00f9ff;
+    color: var(--main);
     
 }
 #about .about-contact i{
@@ -224,7 +261,7 @@ header nav .btn-nav {
 }
 
 #about .about-contact a:hover i{
-    color: #00f9ff;
+    color: var(--main);
 }
 
 
@@ -315,11 +352,11 @@ header nav .btn-nav {
         display: none;
     }
     header nav .menu .item.active a{
-        color: #00f9ff;
+        color: var(--main);
     }
     .item:not(.button) a:hover,
     .item a:hover::after {
-        color: #00f9ff;
+        color: var(--main);
     }
 
     
@@ -358,7 +395,7 @@ header nav .btn-nav {
     animation-name: word;
     animation-duration: 0.3s;
     animation-direction: forwards; 
-    color: #00f9ff;
+    color: var(--main);
 }
 #services .services-services .card i {
     font-size: 5rem;
@@ -432,8 +469,8 @@ header nav .btn-nav {
     width: 100%;
     height: 100%;
     border: 3px solid transparent;
-    border-top: 3px solid #66fcf1;
-    border-right: 3px solid #66fcf1;
+    border-top: 3px solid var(--main);
+    border-right: 3px solid var(--main);
     border-radius: 50%;
     animation: animateCircle 2s linear infinite;
 }
@@ -456,10 +493,10 @@ header nav .btn-nav {
     width: 15px;
     height: 16px;
     border-radius: 50%;
-    background: #66fcf1;
+    background: var(--main);
     top: -8px;
     right: -8px;
-    box-shadow: 0 0 20px #66fcf1;
+    box-shadow: 0 0 20px var(--main);
 }
 
 @keyframes animateCircle {
@@ -523,7 +560,7 @@ header nav .btn-nav {
     animation-name: word;
     animation-duration: 0.3s;
     animation-direction: forwards; 
-    color: #66fcf1;
+    color: var(--main);
 }
 
 #projects .projects-title p{
@@ -778,7 +815,7 @@ header nav .btn-nav {
     animation-name: word;
     animation-duration: 0.3s;
     animation-direction: forwards; 
-    color: #66fcf1;
+    color: var(--main);
 }
 
 #contact .contact-title p{
@@ -836,7 +873,7 @@ header nav .btn-nav {
 }
 #contact .contact-contact .contact-info .boxx .text h4{
     font-weight: 500;
-    color: #66fcf1;
+    color: var(--main);
 }
 #contact .contactForm h2{
     font-weight: 500;
@@ -877,13 +914,13 @@ header nav .btn-nav {
 #contact .contactForm .inputBox input:valid ~ span,
 #contact .contactForm .inputBox textarea:focus ~ span,
 #contact .contactForm .inputBox textarea:valid ~ span{
-    color: #66fcf1;
+    color: var(--main);
     font-size: 0.8rem;
     transform: translateY(-20px);
 }
 #contact .contactForm .inputBox input[type="submit"] {
     width: 100px;
-    background: #4cc0b8;
+    background: #13cc82;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -923,7 +960,7 @@ header nav .btn-nav {
     }
     #contact .contact-contact .contact-info .boxx .text h4{
         font-weight: 500;
-        color: #66fcf1;
+        color: var(--main);
     }
     #contact .contact-contact .contact-info .boxx .text p{
         font-size: 0.8rem;
@@ -1008,7 +1045,7 @@ footer .icons {
 }
 footer .icons i:hover {
     transform: translateY(-10px);
-    color: #66fcf1;
+    color: var(--main);
 }
 footer a{
     color: white;
