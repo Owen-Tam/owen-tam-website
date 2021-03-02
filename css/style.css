@@ -194,6 +194,11 @@ header nav .btn-nav {
         left: 125px;
     }
 }
+@media (max-width: 367px) {
+    #banner .banner-title h1::after {
+        left: 0px;
+    }
+}
 @media (max-width: 350px) {
 
     #banner .banner-title h1::after {
@@ -256,7 +261,7 @@ header nav .btn-nav {
 }
 #about .grid-container .text-grid .about-contact .about-resume a{
     font-size: 1.2rem;
-    text-decoration: none;
+    text-decoration: underline;
     color: var(--main);
     
 }
@@ -602,13 +607,10 @@ header nav .btn-nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    text-align: center;
     
 }
-#projects .projects-project {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-}
+
 
 #projects .projects-project .projects-card img {
     width: 85%;
@@ -633,6 +635,9 @@ header nav .btn-nav {
     opacity: 0;
     transition: opacity 0.3s;
 
+}
+#projects .projects-project .projects-card .innertext p {
+    font-size: 1.4rem;
 }
 #projects .projects-project .projects-card:hover .innertext {
     opacity: 1;
@@ -1007,7 +1012,7 @@ footer img{
 }
 @media (max-width: 1189px) {
     footer .gridd {
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 240px 250px;
         grid-template-columns: auto;
     }
 }
@@ -1018,6 +1023,17 @@ footer img{
     }
     footer .gridd {
         width: 85%;
+    }
+}
+@media (max-width: 414px) {
+    footer .gridd .gridd-about {
+        display: none;
+    }
+    footer .gridd .gridd-nav {
+        margin-bottom: 15px;
+    }
+    footer .gridd {
+        grid-template-rows: 1fr;
     }
 }
 
