@@ -123,14 +123,14 @@ header nav .btn-nav {
     position: relative;
     z-index: 2;
 }
-#banner .banner-title .underline {
+#banner .banner-title h1::after {
     content: '';
     height: 10px;
     width: 193px;
     position: absolute;
     background-color: var(--main);
     left: 139px;
-    bottom: 130px;
+    bottom: 5px;
     z-index: -1;
 }
 @keyframes word {
@@ -177,12 +177,12 @@ header nav .btn-nav {
         display: none;
     }
     #banner .banner-title  {
-        margin: 0 1.2rem 0 0;
+        margin: 0 1.2rem 0 1rem;
     }
     #banner .banner-title h1{
         font-size: 3.5rem;
     }
-    #banner .banner-title .underline {
+    #banner .banner-title h1::after {
         width: 180px;
         left: 125px;
     }
