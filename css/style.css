@@ -10,6 +10,11 @@
     --text-color: #777777;
     --gradient-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
+input,button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
 /* background: var(--gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -316,7 +321,7 @@ header nav .btn-nav {
 
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1039px) {
     #about .grid-container {
         display: grid;
         grid-template-rows: auto 1fr;
@@ -665,7 +670,7 @@ input:focus {
     border: none;
 }
 @media (min-width: 689px) {
-    #projects .projects-project .projects-card img {
+    #projects .projects-project .projects-card{
         width: 90%;
     }
 }
@@ -676,7 +681,10 @@ input:focus {
 }
 @media (min-width: 1024px) {
     #projects .projects-project .projects-card{
-        width: 30%;
+        width: 31%;
+    }
+    #projects {
+        width: 85%;
     }
 }
 input, button {
