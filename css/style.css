@@ -123,14 +123,14 @@ header nav .btn-nav {
     position: relative;
     z-index: 2;
 }
-#banner .banner-title h1::after {
+#banner .banner-title .underline {
     content: '';
     height: 10px;
     width: 193px;
     position: absolute;
     background-color: var(--main);
-    left: 75px;
-    bottom: -8px;
+    left: 139px;
+    bottom: 130px;
     z-index: -1;
 }
 @keyframes word {
@@ -164,15 +164,14 @@ header nav .btn-nav {
     background: var(--main);
     border: 1px solid var(--main);
     transition: all 0.3s; 
+    border-radius: 30px;
 }
 .button.primary-btn:hover {
     background: #3c3c3c;
     color: white;
 
 }
-.button.primary-btn:focus {
-    border: none;
-}
+
 @media (max-width: 1296px) {
     #banner .banner-il img{
         display: none;
@@ -183,11 +182,24 @@ header nav .btn-nav {
     #banner .banner-title h1{
         font-size: 3.5rem;
     }
-    #banner .banner-title h1::after {
+    #banner .banner-title .underline {
         width: 180px;
+        left: 125px;
     }
 }
+@media (max-width: 350px) {
 
+#banner .banner-title .underline {
+    left: 0;
+    bottom: 150px;
+    width: 170px;
+}
+}
+@media (max-width: 465px) {
+    #banner .banner-title .underline {
+        bottom: 150px;
+    }
+}
 #about img {
     width: 379.984px;
     justify-content: start;
@@ -448,7 +460,6 @@ header nav .btn-nav {
         line-height: 1.5;
     }
 }
-
 .loader {
     position: fixed;
     top: 0;
@@ -516,6 +527,7 @@ header nav .btn-nav {
         transform: rotate(360deg);
     }
 }
+
 @keyframes animate {
     0% {
         transform: rotate(45deg);
@@ -527,7 +539,7 @@ header nav .btn-nav {
 
 .loader.hidden {
     animation: fadeOut 1s;
-    animation-delay: 0.5s;
+
     animation-fill-mode: forwards;
 }
 .loader .loader-content {
@@ -584,222 +596,92 @@ header nav .btn-nav {
     justify-content: space-evenly;
     
 }
-/* Peak Client */
-#projects .projects-project .projects-card-peakclient h5{
-    font-size: 1.7rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s;
-}
-#projects .projects-project .projects-card-peakclient {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    position: relative;
-    width: 17rem;
-    height: 9rem;
-    border-radius: 8px;
-    transition: all 0.5s;
-    overflow: hidden;
-    
-    
-}
-#projects .projects-project .projects-card-peakclient:hover {
-    background-color: rgb(224, 77, 63);
-}
-#projects .projects-project .projects-card-peakclient:hover h5 {
-    transform: translate(-68px, -60px);
-}
-#projects .projects-project .projects-card-peakclient .p-peakclient{
-    background: rgb(190, 64, 53);
-    transform: translateY(10rem);
-    height: 2.3rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: transform 0.5s;
+#projects .projects-project {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-#projects .projects-project .projects-card-peakclient:hover .p-peakclient{
-    transform: translateY(290%);
-    opacity: 1;
-    position: relative;
-    
-}
-#projects .projects-project .projects-card-peakclient .p-peakclient p {
-    font-style: italic;
-}
-/*OT*/
-#projects .projects-project .projects-card-ot h5{
-    font-size: 1.7rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s;
-}
-#projects .projects-project .projects-card-ot {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    position: relative;
-    width: 17rem;
-    height: 9rem;
-    border-radius: 8px;
-    transition: all 0.5s;
-    overflow: hidden;
-    
-    
-}
-#projects .projects-project .projects-card-ot:hover {
-    background-color: rgb(79, 192, 236);
-}
-#projects .projects-project .projects-card-ot:hover h5 {
-    transform: translate(-68px, -60px);
-}
-#projects .projects-project .projects-card-ot .p-ot{
-    background: rgb(63, 152, 187);
-    transform: translateY(10rem);
-    height: 2.3rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: transform 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+#projects .projects-project .projects-card img {
+    width: 85%;
 
-#projects .projects-project .projects-card-ot:hover .p-ot{
-    transform: translateY(290%);
-    opacity: 1;
-    position: relative;
+    border-radius: 13px;
+    background-color: #3c3c3c;
+    transition: all 0.3s;
     
-}
-#projects .projects-project .projects-card-ot .p-ot p {
-    font-style: italic;
-}
-/*Ecom Demo*/
-#projects .projects-project .projects-card-ecom h5{
-    font-size: 1.7rem;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: transform 0.5s;
-}
-#projects .projects-project .projects-card-ecom {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    position: relative;
-    width: 17rem;
-    height: 9rem;
-    border-radius: 8px;
-    transition: all 0.5s;
-    overflow: hidden;
-}
-#projects a{
-    text-decoration: none;
-}
-#projects .projects-project .projects-card-ecom:hover {
-    background-color: rgb(137, 47, 240);
-}
-#projects .projects-project .projects-card-ecom:hover h5 {
-    transform: translate(-68px, -60px);
-}
-#projects .projects-project .projects-card-ecom .p-ecom{
-    background: rgb(89, 30, 156);
-    transform: translateY(10rem);
-    height: 2.3rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: transform 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
-
-#projects .projects-project .projects-card-ecom:hover .p-ecom{
-    transform: translateY(290%);
-    opacity: 1;
-    position: relative;
-    
-}
-#projects .projects-project .projects-card-ecom .p-ecom p {
-    font-style: italic;
 }
 #projects .projects-project .projects-card {
-    cursor: pointer;
+    position: relative;
+    width: auto;
+    margin-bottom: 19px;
 }
-
-#projects .projects-project .projects-card-ecom .p-ecom p a{
-    color: white;
-}
-/* App demo */
-#projects .projects-project .projects-card-app h5{
-    font-size: 1.7rem;
+#projects .projects-project .projects-card .innertext {
     position: absolute;
+    width: 75%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    transition: transform 0.5s;
-}
-#projects .projects-project .projects-card-app {
-    background-color: rgb(48, 48, 48);
-    text-align: center;
-    position: relative;
-    width: 17rem;
-    height: 9rem;
-    border-radius: 8px;
-    transition: all 0.5s;
-    overflow: hidden;
-    
-    
-}
-#projects .projects-project .projects-card-app:hover {
-    background-color: rgb(16, 16, 221);
-}
-#projects .projects-project .projects-card-app:hover h5 {
-    transform: translate(-68px, -60px);
-}
-#projects .projects-project .projects-card-app .p-app{
-    background: rgb(11, 11, 145);
-    transform: translateY(10rem);
-    height: 2.3rem;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    transition: transform 0.5s;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
-}
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s;
 
-#projects .projects-project .projects-card-app:hover .p-app{
-    transform: translateY(290%);
+}
+#projects .projects-project .projects-card:hover .innertext {
     opacity: 1;
-    position: relative;
-    
 }
-#projects .projects-project .projects-card-app .p-app p {
-    font-style: italic;
+#projects .projects-project .projects-card:hover img {
+    opacity: 0.2;
+
 }
-#projects .projects-project .projects-card {
+
+#projects .button.secondary-btn {
+    margin-top: 15px;
+}
+@media (max-width: 400px) {
+    #projects .button.secondary-btn {
+        margin-top: 10px;
+        width: 125px;
+    }
+    #projects .projects-project .projects-card .innertext {
+        font-size: 0.9rem;
+    }
+}
+#projects .button.secondary-btn:hover {
+    background-color: var(--main);
+    color: black;
     cursor: pointer;
-    color: white;
-    margin-right: 1.5rem;
-    margin-bottom: 1rem;
 }
-
-#projects .projects-project .projects-card-app .p-app p a{
+.button.secondary-btn {
+    background: #222;
+    transition: all 0.3s; 
     color: white;
-    text-decoration: underline;
+    border-radius: 20px;
+    border: var(--main) solid 1px;
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
 }
-
+input:focus {
+    border: none;
+}
+@media (min-width: 689px) {
+    #projects .projects-project .projects-card img {
+        width: 90%;
+    }
+}
+@media (min-width: 769px) {
+    #projects .projects-project .projects-card{
+        width: 50%;
+    }
+}
+@media (min-width: 1024px) {
+    #projects .projects-project .projects-card{
+        width: 30%;
+    }
+}
+input, button {
+    outline: none;
+}
 #contact {
     margin: 14rem auto 4rem auto;
     width: 50%;
@@ -836,7 +718,7 @@ header nav .btn-nav {
     width: 100%;
     background: rgb(48, 48, 48);
     display: flex;
-    padding: 50px;
+    padding: 40px;
     justify-content: space-between;
     align-items: center;
     margin-top: 5rem;
@@ -993,14 +875,7 @@ header nav .btn-nav {
     #projects  {
         width: 90%;
     }
-    #projects .projects-project .projects-card {
-        margin-right: 0;
-        width: 8rem;
-        height: 5.8rem;
-    }
-    #projects .projects-project .projects-card h5{
-        font-size: 1.4rem;
-    }
+
     #contact .contact-title h3 {
         font-size: 2rem;
         line-height: 1.5;
@@ -1022,14 +897,6 @@ header nav .btn-nav {
 @media (max-width: 845px) {
     #projects  {
         width: 90%;
-    }
-    #projects .projects-project .projects-card {
-        margin-right: 0;
-        width: 10rem;
-        height: 5.8rem;
-    }
-    #projects .projects-project .projects-card h5{
-        font-size: 1.4rem;
     }
     #contact {
         width: 80%;
