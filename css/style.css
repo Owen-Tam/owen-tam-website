@@ -174,7 +174,7 @@ header nav .btn-nav {
 
 }
 
-@media (max-width: 1296px) {
+@media (max-width:81em) {
     #banner .banner-il img{
         display: none;
     }
@@ -189,7 +189,7 @@ header nav .btn-nav {
         left: 125px;
     }
 }
-@media (max-width: 367px) {
+@media (max-width: 22.9375em) {
     #banner .banner-title h1::after {
         left: 0px;
     }
@@ -200,7 +200,7 @@ header nav .btn-nav {
         left: 0px;
     }
 }
-@media (max-width: 465px) {
+@media (max-width: 29.0625em) {
     #banner .banner-title .underline {
         bottom: 150px;
     }
@@ -302,7 +302,7 @@ header nav .btn-nav {
 
 
 
-@media all and (max-width: 1385px) {
+@media all and (max-width: 86.5625em) {
     
     #about .grid-container .text-grid h1{
         font-size: 180px;
@@ -321,7 +321,7 @@ header nav .btn-nav {
 
 }
 
-@media (max-width: 1039px) {
+@media (max-width: 64.9375em) {
     #about .grid-container {
         display: grid;
         grid-template-rows: auto 1fr;
@@ -347,7 +347,7 @@ header nav .btn-nav {
 
 
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 43.75em) {
     header nav .menu {
         justify-content: center;
     }
@@ -365,7 +365,7 @@ header nav .btn-nav {
     
 }
 
-@media all and (min-width: 960px) {
+@media all and (min-width: 60em) {
     
     header nav .item{
         order: 1;
@@ -459,7 +459,7 @@ header nav .btn-nav {
 #services .services-services .card h3 {
     margin-top: 20px;
 }
-@media all and (max-width: 700px) {
+@media all and (max-width: 43.75em) {
     #services .services-title h3 {
         font-size: 3.2rem;
         line-height: 1.5;
@@ -645,7 +645,7 @@ header nav .btn-nav {
 #projects .button.secondary-btn {
     margin-top: 15px;
 }
-@media (max-width: 400px) {
+@media (max-width: 25em) {
     #projects .button.secondary-btn {
         margin-top: 10px;
         width: 125px;
@@ -677,17 +677,17 @@ header nav .btn-nav {
 input:focus {
     border: none;
 }
-@media (min-width: 689px) {
+@media (min-width: 43.0625em) {
     #projects .projects-project .projects-card{
         width: 90%;
     }
 }
-@media (min-width: 769px) {
+@media (min-width: 48.0625em) {
     #projects .projects-project .projects-card{
         width: 50%;
     }
 }
-@media (min-width: 1024px) {
+@media (min-width: 64em) {
     #projects .projects-project .projects-card{
         width: 31%;
     }
@@ -835,7 +835,7 @@ input, button {
     padding: 10px;
     font-size: 1.1rem;
 }
-@media (max-width: 1313px) {
+@media (max-width: 82.0625em) {
     .contact-contact {
         flex-direction: column;
     }
@@ -849,7 +849,7 @@ input, button {
     }
 
 }
-@media (max-width: 531px) {
+@media (max-width: 33.1875em) {
     #contact .contact-contact .contact-info .boxx {
         display: flex;
         position: relative;
@@ -881,7 +881,7 @@ input, button {
         padding: 25px;
     }
 }
-@media (max-width: 464px) {
+@media (max-width: 29em) {
     #services .services-title h3{
         font-size: 2.6rem;
 
@@ -1005,13 +1005,13 @@ footer img{
     height: 120px;
     align-self: center;
 }
-@media (max-width: 1189px) {
+@media (max-width: 74.3125em) {
     footer .gridd {
         grid-template-rows: 240px 250px;
         grid-template-columns: auto;
     }
 }
-@media (max-width: 700px) {
+@media (max-width: 43.75em) {
     footer img {
         width: 90px;
         height: 90px;
@@ -1020,7 +1020,7 @@ footer img{
         width: 85%;
     }
 }
-@media (max-width: 414px) {
+@media (max-width: 35.625em) {
     footer .gridd .gridd-about {
         display: none;
     }
