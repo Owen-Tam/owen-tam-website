@@ -33,107 +33,30 @@ body {
     background-attachment: fixed;
     color: white;
 }
-header nav {
-    font-size: 1rem;
-    background: #222;
-    padding: 0 15px;
-}
-header nav a {
-    color: white;
-    text-decoration: none;
-}
-header nav .menu {
-    list-style-type: none;
-}
 
-header nav .logo {
-    font-size: 20px;
-    padding: 7.5px 10px 7.5px 0px;
-    font-size: 2rem;
-}
-
-header nav .item {
-    padding: 10px;
-}
-header nav .item.button {
-    padding: 9px 5px;
-}
-
-.item:not(.button) a:hover,
-.item a:hover::after {
-    color: #ccc;
-}
-
-header nav .menu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-header nav .menu li a {
-    display: block;
-    padding: 15px 5px;
-    transition: all 0.3s ease 0s;
-}
-
-header nav .toggle {
-    order: 1;
-    font-size: 1.5rem;
-}
-
-header nav .item.button {
-    order: 2;
-}
-
-header nav .item {
-    order: 3;
-    width: 100%;
-    text-align: center;
-    display: none;
-    
-}
-
-header nav .opened .item {
-    display: block;
-}
-header nav .btn-nav {
-    border-bottom: 1px #444 solid;
-}
 #banner {
-    margin: 100px auto 15rem 20px;
+    padding-top: 50px;
+    margin: 100px 30px 18.5rem;
 }
-#banner .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+#banner h1 {
+    font-size: 3rem;
 }
-#banner .banner-il img{
-    max-width: 90%;
+#banner p {
+    font-size: 1rem;
+}
+@media (min-width: 700px) {
+    #banner h1 {
+        font-size: 6rem;
+    }
+    #banner {
+        padding-top: 0px;
+        margin: 200px 30px 300px;
+    }
+    #banner p {
+        font-size: 1.2rem;
+    }
 }
 
-#banner .banner-word {
-    color: white;
-    transition: color 0.3s;
-}
-#banner .banner-title {
-    margin-right: 250px;
-    position: relative;
-    margin: auto 80px;
-    
-    
-}
-#banner .banner-title h1 {
-    font-size: 3.8rem;
-    word-spacing: 5px;
-    line-height: 1.3;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 2;
-}
-.underline {
-    text-decoration: underline;
-    color: var(--main)
-}
 
 @keyframes word {
     0% {transform: scale(1, 1);}
@@ -151,15 +74,17 @@ header nav .btn-nav {
     color: var(--main);
     
 }
-#banner p{
-    margin-top: 10px;
-    font-size: 1.2rem;
+#banner .banner-title {
+    text-align: center;
+}
+#banner h1 {
+    
 }
 #banner .button {
     cursor: pointer;
     margin-top: 20px;
     width: 10rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     height: 3rem;
 }
 .button.primary-btn{
@@ -174,37 +99,7 @@ header nav .btn-nav {
 
 }
 
-@media (max-width:81em) {
-    #banner .banner-il img{
-        display: none;
-    }
-    #banner .banner-title  {
-        margin: 0 1.2rem 0 1rem;
-    }
-    #banner .banner-title h1{
-        font-size: 3.5rem;
-    }
-    #banner .banner-title h1::after {
-        width: 180px;
-        left: 125px;
-    }
-}
-@media (max-width: 22.9375em) {
-    #banner .banner-title h1::after {
-        left: 0px;
-    }
-}
-@media (max-width: 350px) {
 
-    #banner .banner-title h1::after {
-        left: 0px;
-    }
-}
-@media (max-width: 29.0625em) {
-    #banner .banner-title .underline {
-        bottom: 150px;
-    }
-}
 #about img {
     width: 379.984px;
     justify-content: start;
@@ -359,6 +254,10 @@ header nav .btn-nav {
         text-align: right;
         order: 2;
     }
+    header nav .menu {
+        width: 80%;
+        margin: auto;
+    }
 
     
     
@@ -391,7 +290,7 @@ header nav .btn-nav {
 }
 #services {
     margin: 14rem auto 7rem auto;
-    width: 70%;
+    width: 80%;
     height: 100%;
 }
 
@@ -692,194 +591,11 @@ input:focus {
         width: 31%;
     }
     #projects {
-        width: 85%;
+        width: 80%;
     }
 }
 input, button {
     outline: none;
-}
-#contact {
-    margin: 14rem auto 4rem auto;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    
-}
-#contact .contact-title {
-    text-align: center;
-}
-#contact .contact-title h3{
-
-    font-size: 4rem;
-    text-align: center;
-    line-height: 5rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-#contact .contact-title h3 .banner-word:hover {
-    display: inline-block;
-    transform: scale(1, 1);
-    cursor: pointer;
-    animation-name: word;
-    animation-duration: 0.3s;
-    animation-direction: forwards; 
-    color: var(--main);
-}
-
-#contact .contact-title p{
-    opacity: 0.4;
-    text-transform: uppercase;
-    font-size: 1rem;
-}
-#contact .contact-contact{
-    width: 100%;
-    background: rgb(48, 48, 48);
-    display: flex;
-    padding: 40px;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 5rem;
-
-}
-#contact .contact-contact .contactForm {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-}
-#contact .contact-contact h2{
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-#contact .contact-contact .contact-info {
-    display: flex;
-    flex-direction: column;
-}
-#contact .contact-contact .contact-info .boxx {
-    display: flex;
-    position: relative;
-    margin-bottom: 1.5rem;
-}
-#contact .contact-contact .contact-info .boxx .icon {
-    min-width: 60px;
-    height: 60px;
-    background: #fff;
-    display: flex;
-    color: #000;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 1.3rem;
-}
-#contact .contact-contact .contact-info .boxx .text {
-    display: flex;
-    margin-left: 20px;
-    font-size: 16px;
-    color: #fff;
-    flex-direction: column;
-    font-weight: 300;
-}
-#contact .contact-contact .contact-info .boxx .text h4{
-    font-weight: 500;
-    color: var(--main);
-}
-#contact .contactForm h2{
-    font-weight: 500;
-    font-size: 2rem;
-}
-#contact .contactForm .inputBox{
-    position: relative;
-    width: 100%;
-    margin-top: 10px;
-}
-#contact .contactForm .inputBox input,
-#contact .contactForm .inputBox textarea {
-    width: 100%;
-    padding: 5px 0;
-    font-size: 1rem;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid rgb(235, 235, 235);
-    outline: none;
-    background: transparent;
-    color: rgb(235, 235, 235);
-    resize: none;
-}
-#contact .contactForm .inputBox span {
-    position: absolute;
-    left: 0;
-    padding: 5px 0;
-    font-size: 1rem;
-    margin: 10px 0;
-    pointer-events: none;
-    transition: 0.5s;
-    color: #666;
-}
-#contact .contactForm .inputBox .sub {
-    background-color: rgb(34, 34, 34);
-}
-#contact .contactForm .inputBox input:focus ~ span,
-#contact .contactForm .inputBox input:valid ~ span,
-#contact .contactForm .inputBox textarea:focus ~ span,
-#contact .contactForm .inputBox textarea:valid ~ span{
-    color: var(--main);
-    font-size: 0.8rem;
-    transform: translateY(-20px);
-}
-#contact .contactForm .inputBox input[type="submit"] {
-    width: 120px;
-    background: #13cc82;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 1.1rem;
-}
-@media (max-width: 82.0625em) {
-    .contact-contact {
-        flex-direction: column;
-    }
-    #contact  .contact-contact .contactForm {
-        margin-bottom: 43px;
-        width: 90%;
-    }
-    #contact  .contact-contact .contact-info {
-        width: 90%;
-        justify-content: center;
-    }
-
-}
-@media (max-width: 33.1875em) {
-    #contact .contact-contact .contact-info .boxx {
-        display: flex;
-        position: relative;
-    }
-    #contact .contact-contact .contact-info .boxx .icon {
-        display: none;
-    }
-    #contact .contact-contact .contact-info .boxx .text {
-        display: flex;
-        font-size: 16px;
-        color: #fff;
-        flex-direction: column;
-        font-weight: 300;
-        
-        margin: 0;
-    }
-    #contact .contact-contact .contact-info .boxx .text h4{
-        font-weight: 500;
-        color: var(--main);
-    }
-    #contact .contact-contact .contact-info .boxx .text p{
-        font-size: 0.8rem;
-    }
-    #contact .contact-contact .contact-info {
-        width: 100%;
-        align-items: center;
-        justify-items: center;
-        text-align: center;
-        padding: 25px;
-    }
 }
 @media (max-width: 29em) {
     #services .services-title h3{
@@ -916,15 +632,87 @@ input, button {
         width: 90%;
     }
     #contact {
-        width: 80%;
+        width: 90%;
+    }
+}
+#queue {
+    position: relative;
+    top: 95px;
+    z-index: 500;
+}
+#queue button {
+    
+}
+#queue .hold {
+    padding: 25px 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: auto;
+    width: 100%;
+}
+#queue h5 {
+    line-height: 1.1;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+#queue p {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+}
+#queue .button.primary-btn {
+    width: 100px;
+    height: 33px;
+    font-size: 1rem;
+    text-align: center;
+}
+#queue .container {
+    width: 70%;
+    margin: auto;
+    
+}
+#queue .hold{
+    background: rgb(48, 48, 48);
+    
+}
+@media (min-width: 58.1875em) {
+    #queue .hold {
+        flex-direction: row;
+        justify-content: space-around;
+        height: 130px;
+        padding: 15px 25px;
+
+    }
+    #queue {
+        top: 70px;
+    }
+    #queue .button.primary-btn {
+        cursor: pointer;
+        width: 130px;
+        height: 40px;
+        font-weight: 400;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    #queue h5 {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+    #queue p {
+        margin-right: 20px;
+        margin-bottom: 0;
     }
 }
 footer {
-    margin-top: 14rem;
+
+    position: relative;
     width: 100%;
     background-color: #222;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
 }
 footer .icons i{
     font-size: 3rem;
@@ -1029,6 +817,9 @@ footer img{
     }
     footer .gridd {
         grid-template-rows: 1fr;
+    }
+    footer {
+        margin-top: 10px;
     }
 }
 

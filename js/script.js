@@ -21,8 +21,47 @@ window.addEventListener("load", function() {
 });
 gsap.registerPlugin(ScrollTrigger);
 
-var tl = gsap.timeline();
-var tl2 = gsap.timeline();
-tl.from(".banner-title .stag", {duration: 1, opacity: 0, x: -150, stagger: 0.2});
-gsap.from(".contact-contact", {scrollTrigger: ".contact-contact", duration: 1, y: -50, opacity: 0 });
-gsap.from(".stagge", {scrollTrigger: ".contact-contact", duration: 1, opacity:0, x: -50, stagger: 0.2, delay: 0.9});
+gsap.from(".banner-h", {x:-200, duration: 1, ease: "power1"});
+gsap.from(".banner-p", {x:200, duration: 1, ease: "power1"});
+gsap.from(".banner-btn", {x:-200, duration: 1, ease: "power1"});
+gsap.from(".about-title", {
+    scrollTrigger :{
+        trigger: ".about-title",
+    }, x:-100, duration: 1, ease: "power1"});
+gsap.from(".about-text", {
+    scrollTrigger :{
+        trigger: ".about-text",
+        toggleActions: "play pause resume pause"
+    }, x:100, duration: 1, ease: "power1"});    
+gsap.from(".about-resume", {
+    scrollTrigger :{
+        trigger: ".about-text",
+        toggleActions: "play pause resume pause"
+    }, x:-100, duration: 1, ease: "power1"});  
+gsap.from(".buttons", {
+    scrollTrigger :{
+        trigger: ".buttons",
+        toggleActions: "play pause resume pause"
+    }, x:100, duration: 1, ease: "power1"});  
+gsap.from(".about-email", {
+    scrollTrigger :{
+        trigger: ".buttons",
+        toggleActions: "play pause resume pause"
+    }, x:200, duration: 1, ease: "power1"});
+gsap.from(".services-f", {
+    scrollTrigger :{
+        trigger: ".services-f",
+        toggleActions: "play pause resume pause"
+    }, x:-200, duration: 0.5, ease: "power1"});  
+gsap.from(".services-s", {
+    scrollTrigger :{
+        trigger: ".services-s",
+        toggleActions: "play pause resume pause"
+    }, y:200, duration: 0.5, ease: "power1"});
+gsap.from(".services-t", {
+    scrollTrigger :{
+        trigger: ".services-t",
+        toggleActions: "play pause resume pause"
+    }, x:200, duration: 0.5, ease: "power1"});  
+
+      
