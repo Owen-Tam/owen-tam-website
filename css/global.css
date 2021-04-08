@@ -1,0 +1,12 @@
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Poppins';
+}
+p,a,input,label,textarea,span,ul,li{
+    font-family: "Poppins";
+}
+body {
+    z-index: -1;
+    background: url("../img/bodybg.png");
+    background-attachment: fixed;
+    color: white;
+}
