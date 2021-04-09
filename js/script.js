@@ -24,44 +24,24 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.from(".banner-h", {x:-200, duration: 1, ease: "power1"});
 gsap.from(".banner-p", {x:200, duration: 1, ease: "power1"});
 gsap.from(".banner-btn", {x:-200, duration: 1, ease: "power1"});
-gsap.from(".about-title", {
+gsap.from(".services-p", {
     scrollTrigger :{
-        trigger: ".about-title",
-    }, x:-100, duration: 1, ease: "power1"});
-gsap.from(".about-text", {
-    scrollTrigger :{
-        trigger: ".about-text",
+        trigger: ".services-p",
         toggleActions: "play pause resume pause"
-    }, x:100, duration: 1, ease: "power1"});    
-gsap.from(".about-resume", {
+    }, x:200, duration: 0.7, ease: "power1"});
+gsap.from(".services-h", {
     scrollTrigger :{
-        trigger: ".about-text",
+        trigger: ".services-h",
         toggleActions: "play pause resume pause"
-    }, x:-100, duration: 1, ease: "power1"});  
-gsap.from(".buttons", {
+    }, x:-200, duration: 0.7, ease: "power1"});
+gsap.from(".projects-p", {
     scrollTrigger :{
-        trigger: ".buttons",
+        trigger: ".projects-p",
         toggleActions: "play pause resume pause"
-    }, x:100, duration: 1, ease: "power1"});  
-gsap.from(".about-email", {
+    }, x:200, duration: 0.7, ease: "power1"});
+gsap.from(".projects-h", {
     scrollTrigger :{
-        trigger: ".buttons",
+        trigger: ".projects-h",
         toggleActions: "play pause resume pause"
-    }, x:200, duration: 1, ease: "power1"});
-gsap.from(".services-f", {
-    scrollTrigger :{
-        trigger: ".services-f",
-        toggleActions: "play pause resume pause"
-    }, x:-200, duration: 0.5, ease: "power1"});  
-gsap.from(".services-s", {
-    scrollTrigger :{
-        trigger: ".services-s",
-        toggleActions: "play pause resume pause"
-    }, y:200, duration: 0.5, ease: "power1"});
-gsap.from(".services-t", {
-    scrollTrigger :{
-        trigger: ".services-t",
-        toggleActions: "play pause resume pause"
-    }, x:200, duration: 0.5, ease: "power1"});  
-
+    }, x:-200, duration: 0.7, ease: "power1"});
       

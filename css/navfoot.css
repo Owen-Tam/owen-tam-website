@@ -111,3 +111,119 @@ header nav .btn-nav {
     
     
 }
+footer {
+
+    position: relative;
+    width: 100%;
+    background-color: #222;
+    text-align: center;
+    padding-top: 150px;
+}
+footer .icons i{
+    font-size: 3rem;
+    margin: 0 15px 0 15px;
+    transition: all 0.3s;
+
+}
+footer .icons {
+    margin-bottom: 50px;
+    
+}
+footer .icons i:hover {
+    transform: translateY(-10px);
+    color: var(--main);
+}
+footer a{
+    color: white;
+}
+footer .gridd {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-column-gap: 60px;
+}
+footer .gridd .gridd-about .gridd-text {
+    margin-top: 15px;
+}
+
+footer .gridd .gridd-about .gridd-text {
+    display: flex;
+}
+footer .gridd .gridd-about h4 {
+    text-align: left;
+    font-size: 2.4rem;
+    text-decoration: none;
+    border-bottom: 6px solid var(--main);
+
+}
+footer .gridd .gridd-about p{
+    text-align: left;
+    align-self: center;
+    margin-left: 15px;
+}
+footer .gridd .gridd-links {
+    text-align: left;
+
+}
+footer .gridd .gridd-links h4 {
+    font-size: 2.4rem;
+    border-bottom: 6px solid var(--main);
+}
+footer a {
+}
+footer .gridd .gridd-links .gridd-nav {
+    margin-top:15px;
+}
+footer .gridd .gridd-links .gridd-nav p{
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+footer .gridd .gridd-links .gridd-nav a {
+    transition: 0.2s;
+}
+footer .gridd .gridd-links .gridd-nav a:hover{
+    color: var(--main);
+}
+h6 {
+    font-weight: 500;
+    display: block;
+    text-align: center;
+    background:rgb(34, 34, 34);
+    padding-bottom: 15px;
+    
+}
+footer img{
+    width: 120px;
+    height: 120px;
+    align-self: center;
+}
+@media (max-width: 74.3125em) {
+    footer .gridd {
+        grid-template-rows: 240px 250px;
+        grid-template-columns: auto;
+    }
+}
+@media (max-width: 43.75em) {
+    footer img {
+        width: 90px;
+        height: 90px;
+    }
+    footer .gridd {
+        width: 85%;
+    }
+}
+@media (max-width: 35.625em) {
+    footer .gridd .gridd-about {
+        display: none;
+    }
+    footer .gridd .gridd-nav {
+        margin-bottom: 15px;
+    }
+    footer .gridd {
+        grid-template-rows: 1fr;
+    }
+    footer {
+        margin-top: 10px;
+    }
+}
