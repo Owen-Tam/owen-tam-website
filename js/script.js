@@ -44,4 +44,4 @@ gsap.from(".projects-h", {
         trigger: ".projects-h",
         toggleActions: "play pause resume pause"
     }, x:-200, duration: 0.7, ease: "power1"});
-      
+    
