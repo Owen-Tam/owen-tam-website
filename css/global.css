@@ -10,3 +10,10 @@ body {
     background-attachment: fixed;
     color: white;
 }
+.title {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}

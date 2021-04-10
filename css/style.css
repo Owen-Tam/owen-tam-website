@@ -300,6 +300,7 @@ body {
     font-size: 1.2rem;
 }
 
+
 #services .services-title {
     text-align: center;
     line-height: 40px;
@@ -337,22 +338,15 @@ body {
     text-align: center;
     width: 300px;
     background-color: rgb(34, 34, 34);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
     color: white;
-    border-top-left-radius: 15px;
-    border-top-right-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-top: 9px solid var(--main);
+    border-radius: 10px;
     padding: 40px 30px;
     margin: 0 2rem 3rem 2rem;
 }
 #services .services-services .card h3 {
     margin: 10px 10px 5px 10px;
     font-size: 20px;
-}
-#services .services-services .card:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6)
 }
 
 #services .services-services .card h3 {
@@ -581,7 +575,7 @@ input:focus {
         width: 90%;
     }
 }
-@media (min-width: 48.0625em) {
+@media (min-width: 43.75em) {
     #projects .projects-project .projects-card{
         width: 50%;
     }
