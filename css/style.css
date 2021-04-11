@@ -242,52 +242,7 @@ body {
 
 
 
-@media all and (min-width: 43.75em) {
-    header nav .menu {
-        justify-content: center;
-    }
-    header nav .logo {
-        flex: 1;
-    }
-    header nav .toggle {
-        flex: 1;
-        text-align: right;
-        order: 2;
-    }
-    header nav .menu {
-        width: 80%;
-        margin: auto;
-    }
 
-    
-    
-    
-}
-
-@media all and (min-width: 60em) {
-    
-    header nav .item{
-        order: 1;
-        position: relative;
-        display: block;
-        width: auto;
-        font-size: 1.3rem;
-    }
-    header nav .toggle {
-        display: none;
-    }
-    header nav .menu .item.active a{
-        color: var(--main);
-    }
-    .item:not(.button) a:hover,
-    .item a:hover::after {
-        color: var(--main);
-    }
-
-    
-    
-    
-}
 #services {
     margin: 14rem auto 7rem auto;
     width: 80%;
