@@ -4,6 +4,7 @@
     padding: 0;
     margin: 0;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -28,6 +29,7 @@ p,a,input,label,textarea,span,ul,li{
     font-family: "Poppins";
 }
 body {
+    overflow-x: hidden;
     z-index: -1;
     background: url("../img/bodybg.png");
     background-attachment: fixed;

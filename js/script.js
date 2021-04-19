@@ -19,28 +19,28 @@ window.addEventListener("load", function() {
 });
 gsap.registerPlugin(ScrollTrigger);
 
-// gsap.from(".banner-h", {x:-200, duration: 1, ease: "power1"});
-// gsap.from(".banner-p", {x:200, duration: 1, ease: "power1"});
-// gsap.from(".banner-btn", {x:-200, duration: 1, ease: "power1"});
-// gsap.from(".services-p", {
-//     scrollTrigger :{
-//         trigger: ".services-p",
-//         pinSpacing: "none",
-//         toggleActions: "play pause resume pause"
-//     }, x:200, duration: 0.7, ease: "power1"});
-// gsap.from(".services-h", {
-//     scrollTrigger :{
-//         trigger: ".services-h",
-//         toggleActions: "play pause resume pause"
-//     }, x:-200, duration: 0.7, ease: "power1"});
-// gsap.from(".projects-p", {
-//     scrollTrigger :{
-//         trigger: ".projects-p",
-//         toggleActions: "play pause resume pause"
-//     }, x:200, duration: 0.7, ease: "power1"});
-// gsap.from(".projects-h", {
-//     scrollTrigger :{
-//         trigger: ".projects-h",
-//         toggleActions: "play pause resume pause"
-//     }, x:-200, duration: 0.7, ease: "power1"});
+gsap.from(".banner-h", {x:-200, duration: 1, ease: "power1"});
+gsap.from(".banner-p", {x:200, duration: 1, ease: "power1"});
+gsap.from(".banner-btn", {x:-200, duration: 1, ease: "power1"});
+gsap.from(".services-p", {
+    scrollTrigger :{
+        trigger: ".services-p",
+        pinSpacing: "none",
+        toggleActions: "play pause resume pause"
+    }, x:200, duration: 0.7, ease: "power1"});
+gsap.from(".services-h", {
+    scrollTrigger :{
+        trigger: ".services-h",
+        toggleActions: "play pause resume pause"
+    }, x:-200, duration: 0.7, ease: "power1"});
+gsap.from(".projects-p", {
+    scrollTrigger :{
+        trigger: ".projects-p",
+        toggleActions: "play pause resume pause"
+    }, x:200, duration: 0.7, ease: "power1"});
+gsap.from(".projects-h", {
+    scrollTrigger :{
+        trigger: ".projects-h",
+        toggleActions: "play pause resume pause"
+    }, x:-200, duration: 0.7, ease: "power1"});
     
