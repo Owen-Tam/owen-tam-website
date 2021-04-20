@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  --main: #16eb96;
+  --text-color: #777777;
+  --gradient-color: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+}
+input,
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+/* background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text; */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins";
+}
+p,
+a,
+input,
+label,
+textarea,
+span,
+ul,
+li {
+  font-family: "Poppins";
+}
+body {
+  z-index: -1;
+  background: url("../img/bodybg.png");
+  background-attachment: fixed;
+  color: white;
+  overflow-x: hidden;
+}
+
+input,
+button {
+  outline: none;
+}
+header {
+  z-index: 3;
+}
+#about {
+}
+.about-text {
+  width: 95%;
+  margin: 0 auto;
+}
+.about-text .title span {
+  font-size: 3.5rem;
+}
+#about .who {
+  margin: 0 auto 4rem auto;
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 15px;
+  justify-content: space-between;
+}
+.skew {
+  background-color: rgb(34, 34, 34);
+  padding-bottom: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+}
+
+#about-header .about-title {
+  padding: 7rem 0 3rem 0;
+  text-align: center;
+}
+
+#about-header .about-title h3 {
+  font-size: 4rem;
+  text-align: center;
+  line-height: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#about-header .about-title h3 .banner-word:hover {
+  display: inline-block;
+  transform: scale(1, 1);
+  cursor: pointer;
+  animation-name: word;
+  animation-duration: 0.3s;
+  animation-direction: forwards;
+  color: var(--main);
+}
+
+#about-header .about-title p {
+  opacity: 0.4;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+.about-header-text {
+  width: 50%;
+  margin: 0 auto;
+}
+#about .who-title h2 {
+  font-size: 2.9em;
+  margin-bottom: 15px;
+}
+#about .who-text {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+#about .who-words {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#about .who-text .p-text {
+  color: #c4c4c4;
+}
+#about .who-text-p {
+  margin-top: 15px;
+}
+#about .who-text-head {
+  color: white;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+#about .who-words {
+  margin-right: 5%;
+}
+
+@media (max-width: 1065px) {
+  #about .who {
+    width: 80%;
+    flex-wrap: wrap;
+  }
+  #about .who-imgs {
+    margin-top: 2rem;
+  }
+}
