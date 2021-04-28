@@ -16,6 +16,6 @@ window.addEventListener("load", function () {
   loader.className += " hidden";
 });
 
-gsap.registerPlugin(ScrollTrigger);
-gsap.from(".about-p", { x: -200, duration: 0.7, ease: "power1" });
-gsap.from(".about-h", { x: 200, duration: 0.7, ease: "power1" });
+// gsap.registerPlugin(ScrollTrigger);
+// gsap.from(".about-p", { x: -200, duration: 0.7, ease: "power1" });
+// gsap.from(".about-h", { x: 200, duration: 0.7, ease: "power1" });
