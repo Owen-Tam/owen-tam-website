@@ -434,13 +434,18 @@ body {
 #projects .projects-project {
   margin-top: 50px;
   display: flex;
+  gap: 2rem;
   flex-wrap: wrap;
   justify-content: space-evenly;
   text-align: center;
 }
-
+#projects .projects-btn {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
 #projects .projects-project .projects-card img {
-  width: 85%;
+  width: 100%;
 
   border-radius: 13px;
   background-color: #3c3c3c;
@@ -448,7 +453,6 @@ body {
 }
 #projects .projects-project .projects-card {
   position: relative;
-  width: auto;
   margin-bottom: 19px;
 }
 #projects .projects-project .projects-card .innertext {
@@ -503,7 +507,7 @@ input:focus {
 }
 @media (min-width: 64em) {
   #projects .projects-project .projects-card {
-    width: 31%;
+    width: 25%;
   }
   #projects {
     width: 80%;
